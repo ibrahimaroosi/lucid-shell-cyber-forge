@@ -35,10 +35,6 @@ const Hero = () => {
             <Lock className="h-8 w-8 sm:h-12 sm:w-12 text-cyber-green animate-glow-pulse" />
           </div>
 
-          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-4 sm:mb-6 animate-slide-up">
-            Network Security Specialist | Penetration Testing Expert
-          </p>
-
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 animate-slide-up delay-300">
             <span className="text-cyber-green glow-text">
               {displayText}
@@ -46,11 +42,15 @@ const Hero = () => {
             </span>
           </h1>
 
-          <h2 className="text-lg sm:text-xl md:text-2xl text-cyber-blue mb-6 sm:mb-8 animate-slide-up delay-500">
+          <h2 className="text-lg sm:text-xl md:text-2xl text-cyber-blue mb-4 sm:mb-6 animate-slide-up delay-500">
             Founded by <span className="text-cyber-green glow-text">Mohamed Ibrahim J</span>
           </h2>
 
-          <div className="space-y-4 animate-slide-up delay-700 mb-8 sm:mb-12">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 animate-slide-up delay-700">
+            Network Security Specialist | Penetration Testing Expert
+          </p>
+
+          <div className="space-y-4 animate-slide-up delay-900 mb-8 sm:mb-12">
             <p className="text-sm sm:text-base text-gray-400 max-w-2xl mx-auto leading-relaxed px-4">
               Specializing in penetration testing, network hardening, and creating secure solutions 
               for digital infrastructures. Passionate about ethical hacking, system defense, and automation.
