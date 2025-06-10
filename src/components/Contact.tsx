@@ -16,14 +16,14 @@ const Contact = () => {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'Connect on LinkedIn',
-      href: '#',
+      href: 'https://www.linkedin.com/in/mohamed-ibrahim-125020139/',
       color: 'text-cyber-blue'
     },
     {
       icon: Github,
       label: 'GitHub',
       value: 'View on GitHub',
-      href: '#',
+      href: 'https://github.com/ibrahimaroosi',
       color: 'text-cyber-green'
     }
   ];
@@ -55,7 +55,7 @@ const Contact = () => {
                 <Button
                   variant="link"
                   asChild
-                  className={`${method.color} hover:underline p-0 h-auto text-sm`}
+                  className={`${method.color} hover:underline p-0 h-auto text-sm break-all`}
                 >
                   <a href={method.href} target="_blank" rel="noopener noreferrer">
                     {method.value}
@@ -71,7 +71,7 @@ const Contact = () => {
               <span className="text-cyber-green font-bold text-lg">LucidShell</span>
             </div>
             <p className="text-gray-400 text-sm">
-              © 2025 Mohamed Ibrahim J | All rights reserved.
+              © 2025 LucidShell | All rights reserved.
             </p>
           </div>
         </div>

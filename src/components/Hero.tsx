@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = 'Mohamed Ibrahim J';
+  const fullText = 'LucidShell';
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -43,7 +43,7 @@ const Hero = () => {
           </h1>
 
           <h2 className="text-xl md:text-2xl text-cyber-blue mb-4 animate-slide-up delay-300">
-            Founder of <span className="text-cyber-green glow-text">LucidShell</span>
+            Founded by <span className="text-cyber-green glow-text">Mohamed Ibrahim J</span>
           </h2>
 
           <p className="text-lg md:text-xl text-gray-300 mb-8 animate-slide-up delay-500">
