@@ -63,18 +63,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Cybersecurity theme colors
-				cyber: {
-					green: '#00ff41',
-					'green-dark': '#00cc33',
-					'green-glow': '#00ff4180',
-					dark: '#0a0a0a',
-					'dark-card': '#111111',
-					'dark-border': '#333333',
-					blue: '#00d4ff',
-					'blue-glow': '#00d4ff80',
-					red: '#ff0040',
-					'red-glow': '#ff004080'
+				// Flutter development theme colors
+				flutter: {
+					blue: '#42A5F5',
+					'blue-dark': '#1976D2',
+					'blue-light': '#64B5F6',
+					purple: '#A855F7',
+					'purple-dark': '#7C3AED',
+					'purple-light': '#C084FC',
+					teal: '#26C6DA',
+					orange: '#FF7043',
+					pink: '#EC407A',
+					green: '#66BB6A'
 				}
 			},
 			borderRadius: {
@@ -153,6 +153,7 @@ export default {
 			},
 			fontFamily: {
 				'mono': ['Fira Code', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'monospace'],
+				'sans': ['Inter', 'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
 			}
 		}
 	},

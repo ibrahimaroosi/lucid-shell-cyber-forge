@@ -15,7 +15,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-cyber-dark text-cyber-green relative overflow-hidden">
+    <div className="min-h-screen bg-background text-foreground relative overflow-hidden flutter-bg">
       <MatrixBackground />
       <Navigation />
       <div className={`transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>

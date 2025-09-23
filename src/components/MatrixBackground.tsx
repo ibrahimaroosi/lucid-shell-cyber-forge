@@ -19,10 +19,10 @@ const MatrixBackground = () => {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
-    const matrixArray = matrix.split("");
+    const symbols = 'Flutter{}()<>[]dart()=>class@widget★♦▲◆';
+    const symbolsArray = symbols.split("");
 
-    const fontSize = 10;
+    const fontSize = 16;
     const columns = canvas.width / fontSize;
     const drops: number[] = [];
 
@@ -31,14 +31,19 @@ const MatrixBackground = () => {
     }
 
     const draw = () => {
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.04)';
+      ctx.fillStyle = 'rgba(11, 20, 38, 0.08)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = '#00ff41';
-      ctx.font = fontSize + 'px monospace';
+      const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+      gradient.addColorStop(0, '#42A5F5');
+      gradient.addColorStop(0.5, '#A855F7');
+      gradient.addColorStop(1, '#26C6DA');
+      
+      ctx.fillStyle = gradient;
+      ctx.font = fontSize + 'px Inter, sans-serif';
 
       for (let i = 0; i < drops.length; i++) {
-        const text = matrixArray[Math.floor(Math.random() * matrixArray.length)];
+        const text = symbolsArray[Math.floor(Math.random() * symbolsArray.length)];
         ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
         if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
@@ -48,7 +53,7 @@ const MatrixBackground = () => {
       }
     };
 
-    const interval = setInterval(draw, 35);
+    const interval = setInterval(draw, 50);
 
     return () => {
       clearInterval(interval);
@@ -59,7 +64,7 @@ const MatrixBackground = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full pointer-events-none z-0 opacity-20"
+      className="fixed top-0 left-0 w-full h-full pointer-events-none z-0 opacity-25"
     />
   );
 };
