@@ -47,7 +47,7 @@ const Hero = () => {
           </h2>
 
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 animate-slide-up delay-700">
-            Mobile App Developer | Future Entrepreneur
+            Mobile App Developer | Startup Founder
           </p>
 
           <div className="space-y-4 animate-slide-up delay-900 mb-8 sm:mb-12">
