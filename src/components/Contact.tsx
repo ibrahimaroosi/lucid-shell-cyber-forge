@@ -38,8 +38,8 @@ const Contact = () => {
 
           <div className="mb-8 sm:mb-12 animate-slide-up">
             <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed px-4">
-              Ready to secure your digital infrastructure? Let's discuss how we can protect 
-              your organization from cyber threats and build robust security solutions together.
+              Ready to bring your app ideas to life? Let's discuss how we can create innovative Flutter applications 
+              that solve real-world problems and make a meaningful impact.
             </p>
           </div>
 

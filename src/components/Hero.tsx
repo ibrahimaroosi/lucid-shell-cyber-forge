@@ -52,8 +52,8 @@ const Hero = () => {
 
           <div className="space-y-4 animate-slide-up delay-900 mb-8 sm:mb-12">
             <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-              Building innovative Flutter applications with a passion for mobile development. 
-              In shaa Allah, aiming to become an entrepreneur by creating impactful apps that solve real-world problems.
+              Building innovative Flutter applications with a focus on mobile development. 
+              As an entrepreneur, I create impactful apps that solve real-world problems.
             </p>
           </div>
 

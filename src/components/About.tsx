@@ -12,7 +12,7 @@ const About = () => {
     {
       icon: Code,
       title: 'Android Development',
-      description: 'Building native Android applications with modern development practices and user-centric design.'
+      description: 'Future focus on building native Android applications with modern development practices and user-centric design.'
     },
     {
       icon: Rocket,
@@ -22,7 +22,7 @@ const About = () => {
     {
       icon: TrendingUp,
       title: 'Entrepreneurship',
-      description: 'Aspiring entrepreneur focused on building successful app businesses and creating impactful digital products.'
+      description: 'Entrepreneur focused on building successful app businesses and creating impactful digital products.'
     }
   ];
 
@@ -37,7 +37,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
             <div className="space-y-4 sm:space-y-6 animate-slide-up order-2 md:order-1">
               <p className="text-base sm:text-lg text-foreground leading-relaxed">
-                I'm a passionate <span className="text-primary glow-text">Flutter Android Developer</span> with a 
+                I'm a <span className="text-primary glow-text">Flutter Android Developer</span> with a 
                 vision to create innovative mobile applications that make a meaningful impact on people's lives.
               </p>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
@@ -45,8 +45,8 @@ const About = () => {
                 applications using Flutter and Dart. I believe in the power of technology to solve real-world problems.
               </p>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                <span className="text-secondary glow-text">In shaa Allah</span>, I aspire to become an entrepreneur 
-                by developing successful Flutter applications and building a thriving app business that serves millions of users worldwide.
+                As an entrepreneur, I develop successful Flutter applications and build a thriving app business 
+                that serves users worldwide, creating meaningful digital solutions.
               </p>
             </div>
 
