@@ -1,28 +1,28 @@
 
-import { Smartphone, Code, Rocket, TrendingUp } from 'lucide-react';
+import { Gamepad2, Code, Rocket, TrendingUp } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 
 const About = () => {
   const skills = [
     {
-      icon: Smartphone,
-      title: 'Flutter Development',
-      description: 'Creating beautiful, cross-platform mobile applications with Flutter framework and Dart programming.'
+      icon: Gamepad2,
+      title: 'Unity Development',
+      description: 'Creating immersive, high-quality games with Unity engine and C# programming for engaging player experiences.'
     },
     {
       icon: Code,
-      title: 'Android Development',
-      description: 'Future focus on building native Android applications with modern development practices and user-centric design.'
+      title: 'Android Gaming',
+      description: 'Specializing in Android game development with optimized performance and intuitive touch controls.'
     },
     {
       icon: Rocket,
-      title: 'App Innovation',
-      description: 'Developing innovative mobile solutions that solve real-world problems and enhance user experiences.'
+      title: 'Game Innovation',
+      description: 'Developing innovative gaming solutions that captivate players and deliver memorable experiences.'
     },
     {
       icon: TrendingUp,
       title: 'Entrepreneurship',
-      description: 'Entrepreneur focused on building successful app businesses and creating impactful digital products.'
+      description: 'Entrepreneur focused on building successful gaming businesses and creating impactful digital entertainment.'
     }
   ];
 
@@ -37,26 +37,26 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
             <div className="space-y-4 sm:space-y-6 animate-slide-up order-2 md:order-1">
               <p className="text-base sm:text-lg text-foreground leading-relaxed">
-                I'm a <span className="text-primary glow-text">Flutter Android Developer</span> with a 
-                vision to create innovative mobile applications that make a meaningful impact on people's lives.
+                I'm a <span className="text-primary glow-text">Unity Game Developer</span> with a 
+                vision to create immersive gaming experiences that captivate and entertain players worldwide.
               </p>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                My journey in mobile development focuses on building beautiful, performant, and user-friendly 
-                applications using Flutter and Dart. I believe in the power of technology to solve real-world problems.
+                My journey in game development focuses on building engaging, polished, and player-focused 
+                games using Unity and C#. I believe in the power of games to inspire and entertain.
               </p>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                As an entrepreneur, I develop successful Flutter applications and build a thriving app business 
-                that serves users worldwide, creating meaningful digital solutions.
+                As an entrepreneur, I develop successful games and build a thriving gaming business 
+                that reaches players worldwide, creating memorable digital experiences.
               </p>
             </div>
 
             <div className="relative order-1 md:order-2">
               <div className="w-full h-48 sm:h-64 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center border border-primary/30 glow-border">
                 <div className="text-center">
-                  <Smartphone className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 text-primary mx-auto mb-4 animate-glow-pulse" />
+                  <Gamepad2 className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 text-primary mx-auto mb-4 animate-glow-pulse" />
                   <p className="text-primary font-mono text-xs sm:text-sm">
-                    $ flutter doctor<br/>
-                    <span className="text-secondary">✓ Ready to build amazing apps</span>
+                    $ unity --build<br/>
+                    <span className="text-secondary">✓ Ready to create amazing games</span>
                   </p>
                 </div>
               </div>
