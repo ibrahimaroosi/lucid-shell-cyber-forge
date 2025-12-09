@@ -43,17 +43,17 @@ const Hero = () => {
           </h1>
 
           <h2 className="text-lg sm:text-xl md:text-2xl text-primary mb-4 sm:mb-6 animate-slide-up delay-500">
-            Flutter Android Developer
+            Unity Game Developer
           </h2>
 
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 animate-slide-up delay-700">
-            Mobile App Developer | Startup Founder
+            Android Game Developer | Startup Founder
           </p>
 
           <div className="space-y-4 animate-slide-up delay-900 mb-8 sm:mb-12">
             <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-              Building innovative Flutter applications with a focus on mobile development. 
-              As an entrepreneur, I create impactful apps that solve real-world problems.
+              Building immersive Unity games with a focus on Android gaming experiences. 
+              As an entrepreneur, I create engaging games that captivate players worldwide.
             </p>
           </div>
 

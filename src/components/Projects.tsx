@@ -1,32 +1,32 @@
 
-import { ExternalLink, Github, Smartphone, ShoppingCart } from 'lucide-react';
+import { ExternalLink, Github, Gamepad2, Swords } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Flutter App',
-      description: 'A comprehensive e-commerce mobile application built with Flutter, featuring user authentication, product catalog, shopping cart, and payment integration. Designed with modern UI/UX principles.',
-      technologies: ['Flutter', 'Dart', 'Firebase', 'Stripe API'],
-      icon: ShoppingCart,
+      title: 'Action Adventure Game',
+      description: 'An immersive action-adventure game built with Unity, featuring engaging combat mechanics, stunning visuals, and captivating storyline. Optimized for Android devices with smooth performance.',
+      technologies: ['Unity', 'C#', 'Android SDK', 'Firebase'],
+      icon: Swords,
       features: [
-        'User authentication & profiles',
-        'Product catalog with search',
-        'Shopping cart & wishlist',
-        'Secure payment integration'
+        'Engaging combat system',
+        'Rich storyline & quests',
+        'Beautiful 3D graphics',
+        'Smooth mobile controls'
       ]
     },
     {
-      title: 'Task Management Mobile App',
-      description: 'A productivity-focused task management app with intuitive design, real-time synchronization, and team collaboration features. Built to help users organize their daily activities efficiently.',
-      technologies: ['Flutter', 'SQLite', 'Provider', 'Local Notifications'],
-      icon: Smartphone,
+      title: 'Puzzle Strategy Game',
+      description: 'A brain-teasing puzzle game with strategic elements, featuring hundreds of challenging levels, intuitive touch controls, and rewarding progression systems for Android players.',
+      technologies: ['Unity', 'C#', 'AdMob', 'Unity Analytics'],
+      icon: Gamepad2,
       features: [
-        'Task creation and organization',
-        'Real-time synchronization',
-        'Team collaboration tools',
-        'Smart notifications'
+        'Hundreds of puzzle levels',
+        'Strategic gameplay mechanics',
+        'Progressive difficulty',
+        'Leaderboards & achievements'
       ]
     }
   ];
@@ -94,7 +94,7 @@ const Projects = () => {
                     className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 text-sm sm:text-base"
                   >
                     <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 mr-2" />
-                    Demo
+                    Play Store
                   </Button>
                 </div>
               </Card>
