@@ -30,7 +30,7 @@ const About = () => {
     <section id="about" className="py-12 sm:py-16 md:py-20 relative z-10">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-primary glow-text">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-primary glow-text font-display tracking-wider">
             About Me
           </h2>
 

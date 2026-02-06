@@ -63,18 +63,17 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Flutter development theme colors
-				flutter: {
-					blue: '#42A5F5',
-					'blue-dark': '#1976D2',
-					'blue-light': '#64B5F6',
+				// Gaming theme colors
+				gaming: {
 					purple: '#A855F7',
 					'purple-dark': '#7C3AED',
 					'purple-light': '#C084FC',
-					teal: '#26C6DA',
-					orange: '#FF7043',
-					pink: '#EC407A',
-					green: '#66BB6A'
+					blue: '#00D4FF',
+					'blue-dark': '#0099CC',
+					pink: '#FF3D8A',
+					orange: '#FF6B35',
+					green: '#00FF88',
+					yellow: '#FFD93D'
 				}
 			},
 			borderRadius: {
@@ -152,8 +151,8 @@ export default {
 				'typing': 'typing 3s steps(40, end)'
 			},
 			fontFamily: {
-				'mono': ['Fira Code', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'monospace'],
-				'sans': ['Inter', 'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+				'display': ['Orbitron', 'sans-serif'],
+				'sans': ['Rajdhani', 'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
 			}
 		}
 	},
