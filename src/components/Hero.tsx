@@ -35,14 +35,14 @@ const Hero = () => {
             <Rocket className="h-8 w-8 sm:h-12 sm:w-12 text-primary animate-glow-pulse" />
           </div>
 
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 animate-slide-up delay-300">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 animate-slide-up delay-300 font-display">
             <span className="gradient-text glow-text">
               {displayText}
               <span className="animate-pulse">|</span>
             </span>
           </h1>
 
-          <h2 className="text-lg sm:text-xl md:text-2xl text-primary mb-4 sm:mb-6 animate-slide-up delay-500">
+          <h2 className="text-lg sm:text-xl md:text-2xl text-primary mb-4 sm:mb-6 animate-slide-up delay-500 font-display tracking-wider">
             Unity Game Developer
           </h2>
 

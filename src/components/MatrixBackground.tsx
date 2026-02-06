@@ -35,9 +35,9 @@ const MatrixBackground = () => {
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-      gradient.addColorStop(0, '#42A5F5');
-      gradient.addColorStop(0.5, '#A855F7');
-      gradient.addColorStop(1, '#26C6DA');
+      gradient.addColorStop(0, '#A855F7');
+      gradient.addColorStop(0.5, '#00D4FF');
+      gradient.addColorStop(1, '#FF3D8A');
       
       ctx.fillStyle = gradient;
       ctx.font = fontSize + 'px Inter, sans-serif';
