@@ -19,7 +19,7 @@ const MatrixBackground = () => {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    const symbols = 'Flutter{}()<>[]dart()=>class@widget★♦▲◆';
+    const symbols = 'Unity{}()<>[]C#()=>class@game★♦▲◆🎮🕹️';
     const symbolsArray = symbols.split("");
 
     const fontSize = 16;

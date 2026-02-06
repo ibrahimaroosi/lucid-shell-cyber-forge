@@ -6,27 +6,27 @@ import { Button } from '@/components/ui/button';
 const Projects = () => {
   const projects = [
     {
-      title: 'Action Adventure Game',
-      description: 'An immersive action-adventure game built with Unity, featuring engaging combat mechanics, stunning visuals, and captivating storyline. Optimized for Android devices with smooth performance.',
+      title: 'Mr Car',
+      description: 'An exciting car racing game built with Unity, featuring thrilling racing mechanics, dynamic environments, and challenging levels. Optimized for Android devices with smooth controls and engaging gameplay.',
       technologies: ['Unity', 'C#', 'Android SDK', 'Firebase'],
       icon: Swords,
       features: [
-        'Engaging combat system',
-        'Rich storyline & quests',
-        'Beautiful 3D graphics',
+        'Thrilling racing mechanics',
+        'Multiple car options',
+        'Dynamic environments',
         'Smooth mobile controls'
       ]
     },
     {
-      title: 'Puzzle Strategy Game',
-      description: 'A brain-teasing puzzle game with strategic elements, featuring hundreds of challenging levels, intuitive touch controls, and rewarding progression systems for Android players.',
+      title: 'Fruit Catcher',
+      description: 'A fun and addictive fruit catching game where players collect falling fruits while avoiding obstacles. Features colorful graphics, intuitive touch controls, and progressively challenging levels.',
       technologies: ['Unity', 'C#', 'AdMob', 'Unity Analytics'],
       icon: Gamepad2,
       features: [
-        'Hundreds of puzzle levels',
-        'Strategic gameplay mechanics',
+        'Addictive gameplay',
+        'Colorful graphics',
         'Progressive difficulty',
-        'Leaderboards & achievements'
+        'High score system'
       ]
     }
   ];
