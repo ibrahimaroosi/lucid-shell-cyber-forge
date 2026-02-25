@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = 'Mohamed Ibrahim J';
+  const fullText = 'Codex12Dev';
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
