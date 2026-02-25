@@ -8,8 +8,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'ibrahimaroosi@gmail.com',
-      href: 'mailto:ibrahimaroosi@gmail.com'
+      value: 'Codex12Dev@gmail.com',
+      href: 'mailto:Codex12Dev@gmail.com'
     },
     {
       icon: Linkedin,
@@ -21,7 +21,7 @@ const Contact = () => {
       icon: Github,
       label: 'GitHub',
       value: 'View on GitHub',
-      href: 'https://github.com/ibrahimaroosi'
+      href: 'https://github.com/codex12dev'
     }
   ];
 
