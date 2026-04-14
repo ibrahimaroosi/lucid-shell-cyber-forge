@@ -1,5 +1,5 @@
 
-import { Mail, Linkedin, Github, Shield } from 'lucide-react';
+import { Mail, Github, Shield } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -10,12 +10,6 @@ const Contact = () => {
       label: 'Email',
       value: 'Codex12Dev@gmail.com',
       href: 'mailto:Codex12Dev@gmail.com'
-    },
-    {
-      icon: Linkedin,
-      label: 'LinkedIn',
-      value: 'Connect on LinkedIn',
-      href: 'https://www.linkedin.com/in/mohamed-ibrahim-125020139/'
     },
     {
       icon: Github,
