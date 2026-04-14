@@ -1,5 +1,5 @@
 
-import { ExternalLink, Github, Gamepad2, Swords } from 'lucide-react';
+import { ExternalLink, Gamepad2, Swords } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -8,7 +8,8 @@ const Projects = () => {
     {
       title: 'Mr Car',
       description: 'An exciting car racing game built with Unity, featuring thrilling racing mechanics, dynamic environments, and challenging levels. Optimized for Android devices with smooth controls and engaging gameplay.',
-      technologies: ['Unity', 'C#', 'Android SDK', 'Firebase'],
+      technologies: ['Unity', 'C#', 'Android SDK', '3D'],
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.Codex12dev.MrCar',
       icon: Swords,
       features: [
         'Thrilling racing mechanics',
@@ -20,7 +21,8 @@ const Projects = () => {
     {
       title: 'Fruit Catcher',
       description: 'A fun and addictive fruit catching game where players collect falling fruits while avoiding obstacles. Features colorful graphics, intuitive touch controls, and progressively challenging levels.',
-      technologies: ['Unity', 'C#', 'AdMob', 'Unity Analytics'],
+      technologies: ['Unity', 'C#', 'Unity Ads', '3D'],
+      playStoreUrl: '',
       icon: Gamepad2,
       features: [
         'Addictive gameplay',
@@ -81,22 +83,20 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
-                  <Button
-                    variant="outline"
-                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-sm sm:text-base"
-                  >
-                    <Github className="h-3 w-3 sm:h-4 sm:w-4 mr-2" />
-                    Code
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 text-sm sm:text-base"
-                  >
-                    <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 mr-2" />
-                    Play Store
-                  </Button>
-                </div>
+                {project.playStoreUrl && (
+                  <div className="flex">
+                    <Button
+                      variant="outline"
+                      className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 text-sm sm:text-base"
+                      asChild
+                    >
+                      <a href={project.playStoreUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 mr-2" />
+                        Play Store
+                      </a>
+                    </Button>
+                  </div>
+                )}
               </Card>
             ))}
           </div>
