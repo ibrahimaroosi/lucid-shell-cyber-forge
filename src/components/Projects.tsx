@@ -21,7 +21,7 @@ const Projects = () => {
     {
       title: 'Fruit Catcher',
       description: 'A fun and addictive fruit catching game where players collect falling fruits while avoiding obstacles. Features colorful graphics, intuitive touch controls, and progressively challenging levels.',
-      technologies: ['Unity', 'C#', 'Unity Ads', '3D'],
+      technologies: ['Unity', 'C#', 'Unity Ads', '2D'],
       playStoreUrl: '',
       icon: Gamepad2,
       features: [
