@@ -177,4 +177,23 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
+
+  .grid-pattern {
+    background-image:
+      linear-gradient(hsl(var(--primary) / 0.15) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.15) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
 }
+
+@layer utilities {
+  @keyframes float-slow {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(20px, -30px) scale(1.05); }
+  }
+  @keyframes float-slower {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-30px, 20px) scale(1.08); }
+  }
+  .animate-float-slow { animation: float-slow 12s ease-in-out infinite; }
+  .animate-float-slower { animation: float-slower 16s ease-in-out infinite; }
