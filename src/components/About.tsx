@@ -1,78 +1,122 @@
-
-import { Gamepad2, Code, Rocket, TrendingUp } from 'lucide-react';
+import { Gamepad2, Smartphone, Rocket, Layers } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 
 const About = () => {
   const skills = [
     {
       icon: Gamepad2,
-      title: 'Unity Development',
-      description: 'Creating immersive, high-quality games with Unity engine and C# programming for engaging player experiences.'
+      title: 'Unity Game Dev',
+      description:
+        'Building polished 2D & 3D Android games with Unity and C#, focused on performance and engaging gameplay.',
     },
     {
-      icon: Code,
-      title: 'Android Gaming',
-      description: 'Specializing in Android game development with optimized performance and intuitive touch controls.'
+      icon: Smartphone,
+      title: 'Flutter App Dev',
+      description:
+        'Crafting fast, beautiful cross-platform mobile apps with Flutter & Dart, with a focus on clean UX.',
+    },
+    {
+      icon: Layers,
+      title: 'End‑to‑End Shipping',
+      description:
+        'From idea to Play Store: design, develop, optimize, publish, and iterate based on real user feedback.',
     },
     {
       icon: Rocket,
-      title: 'Game Innovation',
-      description: 'Developing innovative gaming solutions that captivate players and deliver memorable experiences.'
+      title: 'Indie Founder',
+      description:
+        'Independent developer & founder building a portfolio of useful apps and addictive games.',
     },
-    {
-      icon: TrendingUp,
-      title: 'Entrepreneurship',
-      description: 'Entrepreneur focused on building successful gaming businesses and creating impactful digital entertainment.'
-    }
+  ];
+
+  const stats = [
+    { value: '2+', label: 'Apps Shipped' },
+    { value: 'Unity', label: 'Game Engine' },
+    { value: 'Flutter', label: 'App Framework' },
+    { value: '∞', label: 'Ideas Brewing' },
   ];
 
   return (
-    <section id="about" className="py-12 sm:py-16 md:py-20 relative z-10">
+    <section id="about" className="py-16 sm:py-20 md:py-24 relative z-10">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-primary glow-text font-display tracking-wider">
-            About Me
-          </h2>
+          <div className="text-center mb-12 sm:mb-16">
+            <span className="inline-block px-3 py-1 mb-4 text-xs uppercase tracking-[0.3em] text-secondary border border-secondary/40 rounded-full">
+              About
+            </span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary glow-text font-display tracking-wider">
+              Who is Codex12Dev?
+            </h2>
+          </div>
 
-          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
-            <div className="space-y-4 sm:space-y-6 animate-slide-up order-2 md:order-1">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center mb-14 sm:mb-20">
+            <div className="space-y-5 animate-slide-up order-2 md:order-1">
               <p className="text-base sm:text-lg text-foreground leading-relaxed">
-                I'm a <span className="text-primary glow-text">Unity Game Developer</span> with a 
-                vision to create immersive gaming experiences that captivate and entertain players worldwide.
+                I'm a <span className="text-primary glow-text">Unity Game Developer</span> and{' '}
+                <span className="text-secondary glow-text">Flutter App Developer</span> building
+                products for mobile players and users worldwide.
               </p>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                My journey in game development focuses on building engaging, polished, and player-focused 
-                games using Unity and C#. I believe in the power of games to inspire and entertain.
+                On the games side, I create immersive Android experiences with Unity & C#. On the
+                apps side, I ship fast, useful, modern Flutter apps that just work.
               </p>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                As an entrepreneur, I develop successful games and build a thriving gaming business 
-                that reaches players worldwide, creating memorable digital experiences.
+                As an indie founder, I focus on shipping — small, sharp, well‑crafted products that
+                solve real problems or bring real fun.
               </p>
             </div>
 
             <div className="relative order-1 md:order-2">
-              <div className="w-full h-48 sm:h-64 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center border border-primary/30 glow-border">
-                <div className="text-center">
-                  <Gamepad2 className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 text-primary mx-auto mb-4 animate-glow-pulse" />
-                  <p className="text-primary font-mono text-xs sm:text-sm">
-                    $ unity --build<br/>
-                    <span className="text-secondary">✓ Ready to create amazing games</span>
+              <div className="absolute -inset-2 bg-gradient-to-tr from-primary/40 via-secondary/30 to-accent/40 rounded-2xl blur-2xl opacity-60 animate-glow-pulse" />
+              <div className="relative w-full h-56 sm:h-72 bg-card/80 backdrop-blur-md rounded-2xl flex items-center justify-center border border-primary/40 overflow-hidden">
+                <div className="absolute inset-0 grid-pattern opacity-40" />
+                <div className="text-center relative z-10 px-6">
+                  <div className="flex justify-center gap-4 mb-4">
+                    <Gamepad2 className="h-10 w-10 sm:h-14 sm:w-14 text-primary animate-glow-pulse" />
+                    <Smartphone className="h-10 w-10 sm:h-14 sm:w-14 text-secondary animate-glow-pulse" />
+                  </div>
+                  <p className="text-primary font-mono text-xs sm:text-sm leading-relaxed">
+                    $ unity build && flutter run<br />
+                    <span className="text-secondary">✓ Two stacks. One developer.</span>
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
+          {/* Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-12 sm:mb-16">
+            {stats.map((s, i) => (
+              <div
+                key={i}
+                className="text-center p-4 sm:p-6 rounded-xl border border-border bg-card/50 backdrop-blur-sm hover:border-primary/60 transition-colors"
+              >
+                <div className="text-2xl sm:text-3xl md:text-4xl font-display font-bold gradient-text">
+                  {s.value}
+                </div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-1 tracking-wider uppercase">
+                  {s.label}
+                </div>
+              </div>
+            ))}
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {skills.map((skill, index) => (
-              <Card 
-                key={index} 
-                className="project-card p-4 sm:p-6 text-center animate-slide-up"
-                style={{ animationDelay: `${index * 200}ms` }}
+              <Card
+                key={index}
+                className="project-card p-5 sm:p-6 text-center animate-slide-up"
+                style={{ animationDelay: `${index * 150}ms` }}
               >
-                <skill.icon className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 text-primary mx-auto mb-3 sm:mb-4 animate-glow-pulse" />
-                <h3 className="text-lg sm:text-xl font-semibold text-secondary mb-2 sm:mb-3">{skill.title}</h3>
-                <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">{skill.description}</p>
+                <div className="inline-flex p-3 rounded-xl bg-primary/10 border border-primary/30 mb-4">
+                  <skill.icon className="h-6 w-6 sm:h-8 sm:w-8 text-primary animate-glow-pulse" />
+                </div>
+                <h3 className="text-base sm:text-lg font-semibold text-secondary mb-2">
+                  {skill.title}
+                </h3>
+                <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
+                  {skill.description}
+                </p>
               </Card>
             ))}
           </div>
